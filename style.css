@@ -1,0 +1,99 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #23395d; 
+    color: #e0f7fa; 
+}
+
+header {
+    background-color: #34577c; 
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+.profile, .interests, .follow-me {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-image-container {
+    /* Centrer l'image dans le conteneur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+.profile-description, .section-title {
+    margin: 20px 0;
+}
+
+.section-title {
+    background-color: #456990;
+    padding: 10px;
+}
+
+.discover-link, .social-icons a {
+    background: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.discover-link:hover, .social-icons a:hover {
+    background-color: #ffffff;
+    color: #23395d;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons i {
+    font-size: 24px; /* Adjust icon size */
+}
